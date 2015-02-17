@@ -51,7 +51,7 @@ $resource = new Collection($books, new BookTransformer);
 $resource->setPaginator(new IlluminatePaginatorAdapter($paginator));
 ~~~
 
-#### Including existing query string values in pagination links
+### Including existing query string values in pagination links
 
 In the example above, previous and next pages will be provided simply with `?page=#` ignoring all other 
 existing query strings. To include all query string values automatically in these links we can replace 
